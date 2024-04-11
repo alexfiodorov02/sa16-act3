@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,11 +13,11 @@
 <header class="mb-4">   
 <h1>Alexander Fiodorov</h1>
 <ul class="nav">
-  <li class="nav-item"><a class="active" href="/home/">Home</a></li>
-  <li class="nav-item"><a href="/about/">About</a></li>
-  <li class="nav-item"><a href="/work/">Work</a></li>
+  <li class="nav-item me-3"><a href="/home/">Home</a></li>
+  <li class="nav-item me-3"><a href="/about/">About</a></li>
+  <li class="nav-item me-3"><a href="/work/">Work</a></li>
   <li class="nav-item"><a href="/contact/">Contact</a></li>
-</ul>              
+</ul>            
 </header>
 
 <main>
@@ -25,7 +26,7 @@
     <div class="col-md-6">
       <div class="card">
         <div class="card-body">
-          <%= image_tag("munch.png", alt: "Munch", class: "card-img-top") %>
+          <img src="{% static 'munch.png' %}" class="card-img-top" alt="Munch">
           <h3 class="card-title">Munch</h3>
           <p class="card-text">Rails-powered recipe blogging platform</p>
         </div>
@@ -34,7 +35,7 @@
     <div class="col-md-6">
       <div class="card">
         <div class="card-body">
-          <%= image_tag("7zArchiver.png", alt: "7zArchiver", class: "card-img-top") %>
+          <img src="{% static '7zArchiver.png' %}" class="card-img-top" alt="7zArchiver">
           <h3 class="card-title">7zArchiver</h3>
           <p class="card-text">Open source GUI 7z file archiver written in Python</p>
         </div>

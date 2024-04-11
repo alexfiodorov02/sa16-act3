@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,7 +14,7 @@
 <header class="mb-4">   
 <h1>Alexander Fiodorov</h1>
 <ul class="nav">
-    <li class="nav-item"><a class="active" href="/home/">Home</a></li>
+    <li class="nav-item"><a href="/home/">Home</a></li>
     <li class="nav-item"><a href="/about/">About</a></li>
     <li class="nav-item"><a href="/work/">Work</a></li>
     <li class="nav-item"><a href="/contact/">Contact</a></li>
@@ -23,7 +24,7 @@
 <main>
     <h2>Home</h2>
     <p class="mb-4">Software engineer with a proven ability to adapt in collaborative environments while staying focused on achieving high-quality results under strict deadlines. Eager to expand my learning and build upon my developer skills.</p>
-    <img src="portfolio-pictures/alex.jpg" class="img-fluid" alt="Picture of Alex">
+    <img src="{% static 'alex.jpg' %}" class="img-fluid" alt="Picture of Alex">
 </main>
 
 <footer class="mt-4">
