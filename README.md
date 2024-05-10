@@ -1,4 +1,4 @@
-### Activity 3: Making a Django App
+# Activity 3: Making a Django App
 Create the same developer portfolio app in Django. You can use the same HTML content.
 ## Submission Instructions:
 Push your project to the sa16-act3 repository on GitHub. https://github.com/alexfiodorov02/sa16-act3
